@@ -1,4 +1,99 @@
+:root{
+    --primary-color: #685858;
+    --secondary-color: #d3d3d3;
+}
+
 body{
     font-family: 'Source Sans 3', sans-serif;
-    background-color: f6f6f6;
+    background-color: #f6f6f6;
+    color: var(--primary-color);
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 900;
+}
+
+.site-wrapper{
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.site-content{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.site-content main{
+    flex: 3;
+}
+
+.site-content form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.site-content aside{
+    flex: 1;
+}
+
+.form-row{
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+
+.form-field{
+    flex: 1;
+}
+
+.form-field label{
+    line-height: 12px;
+}
+
+.form-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+}
+
+.button{
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 3px;
+}
+
+.social-media-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-media-list i{
+    border: 1px solid var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    font-weight: lighter;
+}
+
+footer strong {
+    text-decoration: underline;
+    font-weight: bolder;
 }
