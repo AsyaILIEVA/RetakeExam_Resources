@@ -1,1 +1,43 @@
+.site-header > i {
+    left: 50%;
+    transform: translate(-50%);
+}
 
+.about .about-header {
+    position: static;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 600px){
+.container-fluid nav {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.container-fluid ul {
+    display: none;
+}
+
+.checkbtn {
+    display: block;
+}
+
+#check:checked ~ul {
+    display: flex;
+    order: -1;
+    flex-direction: column;
+}
+}
